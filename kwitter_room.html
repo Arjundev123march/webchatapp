@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room Page</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	
+	<center>
+		<h1  class="header">	
+			Web Chat App	
+			<i class='far fa-comments' style='font-size:48px;color:red'></i>
+		</h1>
+		<h3 id="user_name" class="color_white"></h3>
+	
+			<span style="color:purple;font-size:20px">Enter Room Name:</span> 
+			<input type="text" id="room_name" size="30" placeholder="Room Name"></span>
+					
+		<button onclick="addRoom();" class="btn btn-warning">Add Room</button>
+
+		<h3 class="color_white">Chat Room Information</h3>
+
+		<div id="output"></div>
+		
+	</center>
+</div>
+<button id="logout" onclick="logout();" style="font-size:24px">Logout<i class="fa fa-sign-out"></i></button>
+
+
+<script src="kwitter_room.js"></script>
+</body>
+</html>
